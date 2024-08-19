@@ -34,6 +34,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-impl.recovery \
+    android.hardware.gatekeeper@1.0-service
+
 # Recovery modules/dependencies
 TARGET_RECOVERY_DEVICE_MODULES += \
     libdmabufheap \
