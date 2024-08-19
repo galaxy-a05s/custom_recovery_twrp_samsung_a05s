@@ -30,6 +30,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# Keymint
+PRODUCT_PACKAGES += \
+	android.hardware.security.keymint-service
+
 # Recovery modules/dependencies
 TARGET_RECOVERY_DEVICE_MODULES += \
     libdmabufheap \
@@ -46,6 +50,17 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libnetutils.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@1.0.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so 
+
+# Decrypt
+PRODUCT_PACKAGES += \
+    libkeymaster4support.vendor:64 \
+    libkeymaster4_1support.vendor:64 \
+
+# Misc interfaces
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0.vendor:64 \
+    android.hardware.keymaster@4.0.vendor:64 \
+    android.hardware.keymaster@4.1.vendor:64 \
 
 # QCOM
 PRODUCT_PACKAGES += \
