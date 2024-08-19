@@ -55,6 +55,8 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
 PRODUCT_PACKAGES += \
     libkeymaster4support.vendor:64 \
     libkeymaster4_1support.vendor:64 \
+    libskeymint_cli.vendor:64 \
+    libskeymint10device.vendor:64
 
 # Misc interfaces
 PRODUCT_PACKAGES += \
