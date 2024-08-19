@@ -32,7 +32,7 @@ PRODUCT_PACKAGES += \
 
 # Keymint
 PRODUCT_PACKAGES += \
-	android.hardware.security.keymint-service
+    android.hardware.security.keymint-service
 
 # Recovery modules/dependencies
 TARGET_RECOVERY_DEVICE_MODULES += \
