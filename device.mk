@@ -32,7 +32,7 @@ PRODUCT_PACKAGES += \
 
 # Keymint
 PRODUCT_PACKAGES += \
-    android.hardware.security.keymint-service.vendor
+    android.hardware.security.keymint
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
